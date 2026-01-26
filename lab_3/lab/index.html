@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Задача_1 - ИТМО 5 Web-программирование</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">ИТМО 5 Web-программирование</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Главная</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР №1</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab_1/task_1/" class="dropdown-item">Задача_1</a>
+</li>
+                                    
+<li>
+    <a href="../../lab_1/task_2/" class="dropdown-item">Задача_2</a>
+</li>
+                                    
+<li>
+    <a href="../../lab_1/task_3/" class="dropdown-item">Задача_3</a>
+</li>
+                                    
+<li>
+    <a href="../../lab_1/task_4/" class="dropdown-item">Задача_4</a>
+</li>
+                                    
+<li>
+    <a href="../../lab_1/task_5/" class="dropdown-item">Задача_5</a>
+</li>
+                                    
+<li>
+    <a href="../../lab_1/conclusion/" class="dropdown-item">Вывод</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР №2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab_2/task_1/" class="dropdown-item">Задача_1</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР №3</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Задача_1</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ЛР №4</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab_4/lab/" class="dropdown-item">Задача_1</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Практики</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../practice_31/practice_3_1/" class="dropdown-item">Практика 3.1</a>
+</li>
+                                    
+<li>
+    <a href="../../practice_32/practice_3_2/" class="dropdown-item">Практика 3.2</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../lab_2/task_1/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../lab_4/lab/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Задание</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_2" class="nav-link">Вариант</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_3" class="nav-link">Выполнение</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2" class="nav-link">2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Выполнение доп запросов из варианта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_5" class="nav-link">Листинги</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Сериалиазторы</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Представления</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Задание</h1>
+<p>Реализовать модель базы данных средствами DjangoORM (согласовать с преподавателем на консультации). 1. Реализовать логику работу API средствами Django REST Framework (используя методы сериализации).</p>
+<ol>
+<li>Реализовать модель базы данных средствами DjangoORM</li>
+<li>Реализовать логику работу API средствами Django REST Framework</li>
+<li>Подключить регистрацию / авторизацию по токенам / вывод информации о текущем пользователе средствами Djoser.</li>
+</ol>
+<h1 id="_2">Вариант</h1>
+<p>Создать программную систему, предназначенную для администратора гостиницы.
+Такая система должна обеспечивать хранение сведений об имеющихся в гостинице
+номерах, о проживающих в гостинице клиентах и о служащих, убирающихся в номерах.
+Количество номеров в гостинице известно, и имеются номера трех типов: одноместный,
+двухместный и трехместный, отличающиеся стоимостью проживания в сутки. В каждом
+номере есть телефон.
+О каждом проживающем должна храниться следующая информация: номер
+паспорта, фамилия, имя, отчество, город, из которого он прибыл, дата поселения в
+гостинице, выделенный гостиничный номер.
+О служащих гостиницы должна быть известна информация следующего содержания:
+фамилия, имя, отчество, где (этаж) и когда (день недели) он убирает. Служащий
+гостиницы убирает все номера на одном этаже в определенные дни недели, при этом в
+разные дни он может убирать разные этажи.</p>
+<p>Работа с системой предполагает получение следующей информации:</p>
+<ol>
+<li>о клиентах, проживавших в заданном номере, в заданный период времени;</li>
+<li>о количестве клиентов, прибывших из заданного города,</li>
+<li>о том, кто из служащих убирал номер указанного клиента в заданный день недели,</li>
+<li>сколько в гостинице свободных номеров;</li>
+<li>список клиентов с указанием места жительства, которые проживали в те же дни, что и заданный клиент, в определенный период времени.</li>
+</ol>
+<p>Администратор должен иметь возможность выполнить следующие операции:</p>
+<ol>
+<li>принять на работу или уволить служащего гостиницы;</li>
+<li>изменить расписание работы служащего;</li>
+<li>поселить или выселить клиента.</li>
+</ol>
+<p>Необходимо предусмотреть также возможность автоматической выдачи отчета о
+работе гостиницы за указанный квартал текущего года. Такой отчет должен содержать
+следующие сведения:</p>
+<ol>
+<li>число клиентов за указанный период в каждом номере;</li>
+<li>количество номеров не каждом этаже;</li>
+<li>общая сумма дохода за каждый номер;</li>
+<li>суммарный доход по всей гостинице.</li>
+</ol>
+<h1 id="_3">Выполнение</h1>
+<h2 id="1">1</h2>
+<p>При помощи DjangoORM была реализована модель базы данных:</p>
+<pre><code class="language-python">from django.db import models
+
+
+class Floor(models.Model):
+    number = models.PositiveIntegerField(unique=True, verbose_name=&quot;Номер этажа&quot;)
+    description = models.TextField(null=True, blank=True, verbose_name=&quot;Описание этажа&quot;)
+
+class Room(models.Model):
+    room_types = (
+        ('single', 'Одноместный'),
+        ('double', 'Двухместный'),
+        ('triple', 'Трехместный'),
+    )
+    number = models.CharField(max_length=10, unique=True, verbose_name=&quot;Номер комнаты&quot;)
+    room_type = models.CharField(max_length=10, choices=room_types, verbose_name=&quot;Тип номера&quot;)
+    price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=&quot;Стоимость за день&quot;)
+    phone = models.CharField(max_length=20, verbose_name=&quot;Телефон в номере&quot;)    
+    floor = models.ForeignKey(Floor, on_delete=models.CASCADE, related_name=&quot;rooms&quot;, verbose_name=&quot;Этаж&quot;)
+
+    def __str__(self):
+        return f&quot;Номер {self.number} ({self.get_room_type_display()})&quot;
+
+
+class Guest(models.Model):
+    passport_number = models.CharField(max_length=20, unique=True, verbose_name=&quot;Номер паспорта&quot;)
+    last_name = models.CharField(max_length=100, verbose_name=&quot;Фамилия&quot;)
+    first_name = models.CharField(max_length=100, verbose_name=&quot;Имя&quot;)
+    patronymic = models.CharField(max_length=100, blank=True, verbose_name=&quot;Отчество&quot;)
+    city = models.CharField(max_length=100, verbose_name=&quot;Город&quot;)
+
+    def __str__(self):
+        return f&quot;{self.last_name} {self.first_name} ({self.passport_number})&quot;
+
+class LivingRecord(models.Model):
+    guest = models.ForeignKey(Guest, on_delete=models.CASCADE, related_name=&quot;living_records&quot;, verbose_name=&quot;Гость&quot;)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name=&quot;living_records&quot;, verbose_name=&quot;Номер&quot;)
+    start_date = models.DateField(verbose_name=&quot;Дата заезда&quot;)
+    end_date = models.DateField(null=True, blank=True, verbose_name=&quot;Дата выезда&quot;)
+
+    def __str__(self):
+        return f&quot;{self.guest} {self.room}&quot;
+
+class Staff(models.Model):
+    last_name = models.CharField(max_length=100, verbose_name=&quot;Фамилия&quot;)
+    first_name = models.CharField(max_length=100, verbose_name=&quot;Имя&quot;)
+    patronymic = models.CharField(max_length=100, blank=True, verbose_name=&quot;Отчество&quot;)
+
+    def __str__(self):
+        return f&quot;{self.last_name} {self.first_name}&quot;
+
+
+class CleaningSchedule(models.Model):
+    days_of_week = (
+        (1, 'Понедельник'),
+        (2, 'Вторник'),
+        (3, 'Среда'),
+        (4, 'Четверг'),
+        (5, 'Пятница'),
+        (6, 'Суббота'),
+        (7, 'Воскресенье'),
+    )   
+    staff = models.ForeignKey(Staff, on_delete=models.CASCADE, related_name=&quot;cleaning_schedules&quot;, verbose_name=&quot;Служащий&quot;)
+    floor = models.ForeignKey(Floor, on_delete=models.CASCADE, related_name=&quot;cleaning_schedules&quot;, verbose_name=&quot;Этаж&quot;)
+    day_of_week = models.PositiveSmallIntegerField(choices=days_of_week, verbose_name=&quot;День недели&quot;)
+
+    class Meta:
+        unique_together = ('floor', 'day_of_week')
+
+    def __str__(self):
+        return f&quot;{self.staff} — этаж {self.floor}, {self.get_day_of_week_display()}&quot;
+
+class CleaningRecord(models.Model):
+    staff = models.ForeignKey(Staff, on_delete=models.CASCADE, related_name=&quot;cleaning_records&quot;, verbose_name=&quot;Служащий&quot;)
+    floor = models.ForeignKey(Floor, on_delete=models.CASCADE, related_name=&quot;cleaning_records&quot;, verbose_name=&quot;Этаж&quot;)
+    cleaning_date = models.DateField(verbose_name=&quot;Дата уборки&quot;)
+
+    class Meta:
+        unique_together = ('floor', 'cleaning_date')
+
+    def __str__(self):
+        return f&quot;{self.staff} — этаж {self.floor}, {self.cleaning_date}&quot;
+</code></pre>
+<h2 id="2">2</h2>
+<p>При помощи Django REST Framework были созданы основные эндпоинты при помощи ViewSet а так же дополнительные требуемые запросы. Использовалась библиотека drf-yasg для красивого оформления сваггера апи. 
+<img alt="Сваггер" src="../photos/swagger_1.png" />
+<img alt="Сваггер" src="../photos/swagger_2.png" />
+<img alt="Сваггер" src="../photos/swagger_3.png" />
+<img alt="Сваггер" src="../photos/swagger_4.png" />
+<img alt="Сваггер" src="../photos/swagger_5.png" /></p>
+<h2 id="3">3</h2>
+<p>Как видно по фото выше так же была подключена авторизация по токенам при помощи Djoser</p>
+<h2 id="_4">Выполнение доп запросов из варианта</h2>
+<p><img alt="Запросы" src="../photos/1.png" />
+<img alt="Запросы" src="../photos/2.png" />
+<img alt="Запросы" src="../photos/3.png" />
+<img alt="Запросы" src="../photos/4.png" />
+<img alt="Запросы" src="../photos/5.png" />
+<img alt="Запросы" src="../photos/6.png" />
+<img alt="Запросы" src="../photos/7.png" />
+<img alt="Запросы" src="../photos/8.png" />
+<img alt="Запросы" src="../photos/9.png" />
+<img alt="Запросы" src="../photos/10.png" /></p>
+<h1 id="_5">Листинги</h1>
+<h2 id="_6">Сериалиазторы</h2>
+<pre><code class="language-python">from rest_framework import serializers
+from .models import Floor, Room, Guest, LivingRecord, Staff, CleaningSchedule, CleaningRecord
+
+
+class FloorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Floor
+        fields = '__all__'
+
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = '__all__'
+
+
+class GuestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Guest
+        fields = '__all__'
+
+
+class LivingRecordSerializer(serializers.ModelSerializer):
+    guest = GuestSerializer(read_only=True)
+    room = RoomSerializer(read_only=True)
+
+    class Meta:
+        model = LivingRecord
+        fields = '__all__'
+
+class LivingRecordSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LivingRecord
+        fields = '__all__'
+
+
+class StaffSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Staff
+        fields = '__all__'
+
+
+class CleaningScheduleSerializer(serializers.ModelSerializer):
+    staff = StaffSerializer(read_only=True)
+    floor = FloorSerializer(read_only=True)
+
+    class Meta:
+        model = CleaningSchedule
+        fields = '__all__'
+
+class CleaningScheduleSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CleaningSchedule
+        fields = '__all__'
+
+class FloorFullSerializer(serializers.ModelSerializer):
+    rooms = RoomSerializer(many=True, read_only=True)
+    cleaning_schedules = CleaningScheduleSimpleSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Floor
+        fields = '__all__'
+
+class StaffFullSerializer(serializers.ModelSerializer):
+    cleaning_schedules = CleaningScheduleSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Staff
+        fields = '__all__'
+
+class GuestFullSerializer(serializers.ModelSerializer):
+    living_records = LivingRecordSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Guest
+        fields = '__all__'
+
+class RoomFullSerializer(serializers.ModelSerializer):
+    living_records = LivingRecordSerializer(many=True, read_only=True)
+    floor = FloorFullSerializer(read_only=True)
+
+    class Meta:
+        model = Room
+        fields = '__all__'
+
+class CleaningRecordSerializer(serializers.ModelSerializer):
+    floor = FloorSerializer(read_only=True)
+    staff = StaffSerializer(read_only=True)
+
+    class Meta:
+        model = CleaningRecord
+        fields = '__all__'
+
+class CleaningRecordSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CleaningRecord
+        fields = '__all__'
+</code></pre>
+<h2 id="_7">Представления</h2>
+<pre><code class="language-python">from rest_framework import viewsets, status
+from rest_framework.decorators import action, api_view
+from rest_framework.response import Response
+from .models import Floor, Room, Guest, LivingRecord, Staff, CleaningSchedule, CleaningRecord
+from .serializers import (FloorSerializer, RoomSerializer, GuestSerializer, LivingRecordSerializer, 
+                          StaffSerializer, CleaningScheduleSerializer, FloorFullSerializer, RoomFullSerializer,
+                          GuestFullSerializer, StaffFullSerializer, CleaningScheduleSimpleSerializer, 
+                          LivingRecordSimpleSerializer, CleaningRecordSerializer, CleaningRecordSimpleSerializer)
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+from datetime import date
+from django.db.models import Count, Q
+from django.utils.decorators import method_decorator
+
+def tagged_viewset(tag_name):
+    def wrapper(cls):
+        actions = ['list', 'create', 'retrieve', 'update', 'partial_update', 'destroy']
+        for action in actions:
+            if hasattr(cls, action):
+                decorator = swagger_auto_schema(tags=[tag_name])
+                setattr(cls, action, method_decorator(decorator, name=action)(getattr(cls, action)))
+        return cls
+    return wrapper
+
+@tagged_viewset('Floor')
+class FloorViewSet(viewsets.ModelViewSet):
+    queryset = Floor.objects.all()
+    serializer_class = FloorSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return FloorFullSerializer
+        return FloorSerializer
+
+@tagged_viewset('Room')
+class RoomViewSet(viewsets.ModelViewSet):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return RoomFullSerializer
+        return RoomSerializer
+
+    @swagger_auto_schema(
+        operation_description=&quot;Кол-во свободных номеров&quot;,
+        responses={200: openapi.Response(
+            description=&quot;Кол-во свободных номеров&quot;,
+            schema=openapi.Schema(type=openapi.TYPE_INTEGER)
+        )},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def count_not_occupied(self, request):
+        today = date.today()
+        n_free_rooms = Room.objects.exclude(
+            Q(living_records__end_date__gte=today) | Q(living_records__end_date__isnull=True),
+            living_records__start_date__lte=today).count()
+        return Response(n_free_rooms)
+
+@tagged_viewset('Guest')
+class GuestViewSet(viewsets.ModelViewSet):
+    queryset = Guest.objects.all()
+    serializer_class = GuestSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return GuestFullSerializer
+        return GuestSerializer
+
+    @swagger_auto_schema(
+        operation_description=&quot;Гости по городу&quot;,
+        manual_parameters=[
+            openapi.Parameter('city', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True)
+        ],
+        responses={200: openapi.Response(
+            description=&quot;Кол-во гостей из города&quot;,
+            schema=openapi.Schema(type=openapi.TYPE_INTEGER)
+        )},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def count_by_city(self, request):
+        city = request.query_params.get('city')
+        if not city:
+            return Response({&quot;error&quot;: &quot;Укажите параметр city&quot;}, status=status.HTTP_400_BAD_REQUEST)
+        n_guests = Guest.objects.filter(city=city).count()
+        return Response(n_guests)
+
+    @swagger_auto_schema(
+        operation_description=&quot;Гости за период по номеру&quot;,
+        manual_parameters=[
+            openapi.Parameter('room_id', openapi.IN_QUERY, type=openapi.TYPE_INTEGER, required=True),
+            openapi.Parameter('start_date', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True),
+            openapi.Parameter('end_date', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True)
+        ],
+        responses={200: GuestSerializer(many=True)},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def by_room_period(self, request):
+        room_id = request.query_params.get('room_id')
+        start = request.query_params.get('start_date')
+        end = request.query_params.get('end_date')
+        records = LivingRecord.objects.filter(
+            Q(end_date__gte=start) | Q(end_date__isnull=True),
+            room_id=room_id,
+            start_date__lte=end,
+        ).select_related('guest')
+
+        guests = [record.guest for record in records]
+        return Response(GuestSerializer(guests, many=True).data)
+
+    @swagger_auto_schema(
+        operation_description=&quot;Гости в тот же период по гостю&quot;,
+        manual_parameters=[
+            openapi.Parameter('guest_id', openapi.IN_QUERY, type=openapi.TYPE_INTEGER, required=True),
+            openapi.Parameter('start_date', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True),
+            openapi.Parameter('end_date', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True)
+        ],
+        responses={200: GuestSerializer(many=True)},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def by_guest_period(self, request):
+        guest_id = request.query_params.get('guest_id')
+        start = request.query_params.get('start_date')
+        end = request.query_params.get('end_date')
+        guest_record = LivingRecord.objects.filter(
+            guest_id=guest_id,
+            start_date__gte=start,
+            end_date__lte=end
+            ).first()
+
+        start = max(str(guest_record.start_date), start)
+        end = min(str(guest_record.end_date) or end, end)
+        guests = Guest.objects.filter(
+            living_records__start_date__lte=end,
+            living_records__end_date__gte=start
+        ).exclude(pk=guest_id).distinct()
+
+        return Response(GuestSerializer(guests, many=True).data)
+
+@tagged_viewset('LivingRecord')
+class LivingRecordViewSet(viewsets.ModelViewSet):
+    queryset = LivingRecord.objects.all()
+    serializer_class = LivingRecordSerializer
+
+    def get_serializer_class(self):
+        if self.action in ['create', 'update', 'partial_update']:
+            return LivingRecordSimpleSerializer
+        return LivingRecordSerializer
+
+    @swagger_auto_schema(
+        operation_description=&quot;Проживания сейчас&quot;,
+        responses={200: LivingRecordSerializer},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def active(self, request):
+        today_date = date.today()
+        active_living_records = LivingRecord.objects.filter(
+            Q(end_date__gte=today_date) | Q(end_date__isnull=True),
+            start_date__lte=today_date
+        )
+        return Response(LivingRecordSerializer(active_living_records, many=True).data)
+
+@tagged_viewset('Staff')
+class StaffViewSet(viewsets.ModelViewSet):
+    queryset= Staff.objects.all()
+    serializer_class = StaffSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return StaffFullSerializer
+        return StaffSerializer
+
+    @swagger_auto_schema(
+        operation_description=&quot;Сотрудник, который убирал номер клиента в заданый день&quot;,
+        manual_parameters=[
+            openapi.Parameter('guest_id', openapi.IN_QUERY, type=openapi.TYPE_INTEGER, required=True),
+            openapi.Parameter('date', openapi.IN_QUERY, type=openapi.TYPE_STRING, required=True)
+        ],
+        responses={200: StaffSerializer(many=True)},
+        tags=['dop_requests']
+    )
+    @action(detail=False, methods=['get'])
+    def by_guest_day(self, request):
+        guest_id = request.query_params.get('guest_id')
+        cleaning_date = request.query_params.get('date')
+        if not guest_id or not date:
+            return Response({&quot;error&quot;: &quot;не указаны нужные параметры&quot;}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            living_record = LivingRecord.objects.filter(
+                Q(end_date__gte=cleaning_date) | Q(end_date__isnull=True),
+                guest_id=guest_id,
+                start_date__lte=cleaning_date,
+                ).first()
+            if not living_record:
+                return Response({&quot;error&quot;: &quot;Данный гость не проживал в данную дату&quot;}, status=status.HTTP_400_BAD_REQUEST)
+            floor = living_record.room.floor
+            staff = CleaningRecord.objects.get(floor=floor, cleaning_date=cleaning_date).staff
+            return Response(StaffSerializer(staff).data)
+        except:
+            return Response({&quot;error&quot;: &quot;Ошибка при обработке&quot;}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+@tagged_viewset('CleaningSchedule')
+class CleaningScheduleViewSet(viewsets.ModelViewSet):
+    queryset = CleaningSchedule.objects.all()
+    serializer_class = CleaningScheduleSerializer
+
+    def get_serializer_class(self):
+        if self.action in ['create', 'update', 'partial_update']:
+            return CleaningScheduleSimpleSerializer
+        return CleaningScheduleSerializer
+
+@tagged_viewset('CleaningRecord')
+class CleaningRecordViewSet(viewsets.ModelViewSet):
+    queryset = CleaningRecord.objects.all()
+    serializer_class = CleaningRecordSerializer
+
+    def get_serializer_class(self):
+        print(self.queryset)
+        if self.action in ['create', 'update', 'partial_update']:
+            return CleaningRecordSimpleSerializer
+        return CleaningRecordSerializer
+
+@swagger_auto_schema(
+    method='get',
+    operation_description=&quot;Получить отчёт за квартал&quot;,
+    manual_parameters=[
+        openapi.Parameter('quarter', openapi.IN_QUERY, type=openapi.TYPE_INTEGER, required=True)
+    ],
+    responses={200: &quot;Отчёт за квартал&quot;},
+    tags=['dop_requests']
+)
+@api_view(['GET'])
+def hotel_quarterly_report(request):
+    quarter = request.query_params.get('quarter')
+    year_now = date.today().year
+    quarters = {
+        1: (date(year_now, 1, 1), date(year_now, 3, 31)),
+        2: (date(year_now, 4, 1), date(year_now, 6, 30)),
+        3: (date(year_now, 7, 1), date(year_now, 9, 30)),
+        4: (date(year_now, 10, 1), date(year_now, 12, 31)),
+    }
+    start_date, end_date = quarters[int(quarter)]
+    rooms = Room.objects.all()
+    room_report = []
+    income = 0
+    for room in rooms:
+        living_records = LivingRecord.objects.filter(
+                room=room,
+                start_date__lte=end_date,
+                end_date__gte=start_date
+            )
+        guest_count = living_records.count()
+        income_room = 0
+        for record in living_records:
+            start = max(start_date, record.start_date)
+            end = min(end_date, record.end_date or date.today())
+            if end &lt; start:
+                continue
+            income_room += float(room.price) * (end - start).days + 1
+        room_report.append({
+            'room_id': room.id,
+            'guests': guest_count,
+            'income': str(round(income_room, 2))
+        })
+        income += income_room
+    floor_count = Floor.objects.annotate(room_count=Count('rooms'))
+    floor_report = {floor.id: floor.room_count for floor in floor_count}
+    return Response({
+        &quot;income&quot;:  str(round(income, 2)),
+        &quot;room_report&quot;: room_report,
+        &quot;floor_report&quot;: floor_report
+    })
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
