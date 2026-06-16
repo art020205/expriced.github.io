@@ -28,7 +28,7 @@
 ![](photos/rooms/1.png)
 ![](photos/rooms/2.png)
 ![](photos/rooms/3.png)
-# Расписание уборкок
+## Расписание уборкок
 ![](photos/cle/1.png)
 ![](photos/cle/2.png)
 ![](photos/cle/3.png)
